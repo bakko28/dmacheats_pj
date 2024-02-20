@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    margin-top: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #080814;
+}
+
+p {
+    color: #B8D1F1;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px orange solid;
+    width: 100vw;
+}
+
+header button {
+    margin: 8px;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    background: transparent;
+    color: #B8D1F1;
+}
+
+main {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    border: 2px pink solid;
+}
+
+.bg {
+    top: 20px;
+    position: absolute;
+    z-index: -3;
+    width: 100vw;
+    justify-content: space-evenly;
+    display: flex;
+    border: 2px red solid;
+}
+
+.circle-bg-left {
+    position: relative;
+    top: 110px;
+    padding: 8px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    border: 2px yellow solid;
+    opacity: 0.1;
+}
+
+.circle-bg-left img {
+    margin-top: 40px;
+}
+
+.circle-bg-right {
+    position: relative;
+    top: 110px;
+    padding: 8px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    border: 2px yellow solid;
+    opacity: 0.1;
+}
+
+.circle-bg-right img {
+    margin-top: 40px;
+}
+
+.bg-img-center {
+    border: 2px green solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img-center img {
+    height: 800px;
+}
+
+.bg-img-center .bg-center1 {
+    position: absolute;
+    z-index: -2;
+    opacity: 0.1;
+}
+
+.bg-img-center .bg-center2 {
+    color: #7FABD3;
+}
+
+.mainbox {
+    margin-top: 48px;
+    padding: 16px;
+    border: 2px yellow solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.mainbox h2 {
+    font-family: "Roboto Flex", sans-serif;
+    color: #B8D1F1;
+    font-weight: 600;
+    font-size: 140px;
+}
+
+.mainbox p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.cardbox {
+    display: flex;
+    /* border: 2px orange solid; */
+}
+
+.card {
+    width: 540px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px darkmagenta solid;
+}
+
+.card, .card-img1 {
+    position: relative;
+    top: -100px;
+}
+
+.card, .card-img2 {
+    position: relative;
+    top: -100px;
+}
+
+.card, .card-img3 {
+    position: relative;
+    top: -100px;
+}
+
+.card, .card-img4 {
+    position: relative;
+    top: -100px;
+}
+
