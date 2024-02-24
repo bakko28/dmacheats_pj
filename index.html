@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMA Cheats</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
     <header>
@@ -183,13 +184,13 @@
                     <p>Telegram</p>
                     <p>Ваше имя</p>
                 </div>
-                <form id="myForm">
+                <form id="telegramForm">
                     <div class="inputbox-application">
-                        <input id="telegram" type="text" placeholder="@nexudojnik">
-                        <input id="name" type="text" placeholder="Павел">
+                        <input type="text" id="telegram" placeholder="@nexudojnik"><br>
+                        <input type="text" id="name" placeholder="Павел"><br>
                     </div>
-                    <button id="btnForm" type="submit">Отправить</button>
-                </form>               
+                    <button type="submit">Отправить</button>
+                </form>             
         </div>
     </main>
     <footer>
@@ -205,7 +206,30 @@
         </div>
         <button><img src="img/telegram-svgrepo-com (3) 3.png" alt="" class="telegram-logo" width="54px" height="54px"></button>
     </footer>
+    <script>
+        document.getElementById("telegramForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
+            let telegram = document.getElementById("telegram").value;
+            let name = document.getElementById("name").value;
+
+            let text = "Телеграм: " + telegram + "\nИмя: " + name;
+
+            var telegramUrl = "https://api.telegram.org/bot7122079884:AAHXd98FRmrHMf7mqHwysxza0Hs_6930yWE/sendMessage?chat_id=741962421&text=" + encodeURIComponent(text);
+
+            fetch(telegramUrl, { method: "GET" })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                alert('Ваше сообщение успешно отправлено!');
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+                alert('Произошла ошибка при отправке сообщения. Попробуйте еще раз.');
+            });
+        });
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
