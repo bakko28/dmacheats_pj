@@ -78,8 +78,6 @@ input:hover {
     transform: scale(1.04);
 }
 
-
-
 p {
     color: #B8D1F1;
 }
@@ -89,7 +87,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px orange solid; */
-    width: 100vw;
+    width: 88vw;
 }
 
 header .buttons {
@@ -486,7 +484,7 @@ main {
 .left-block-catalog {
     position: relative;
     opacity: 0.7;
-    width: 750px;
+    width: 100vw;
     height: 500px;
     top: 110px;
 }
@@ -494,7 +492,7 @@ main {
 .right-block-catalog {
     position: relative;
     opacity: 0.7;
-    width: 750px;
+    width: 100vw;
     height: 500px;
     top: 110px;
     transform: scaleX(-1);
@@ -537,9 +535,81 @@ main {
     /* border: 2px green solid; */
 }
 
-.technology-box-info img {
+.technologycard {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     margin: 16px;
-    height: 320px;
+    width: 1140px;
+    height: 300px;
+    /* border: 2px red solid; */
+}
+
+.technologycard2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    width: 1140px;
+    height: 300px;
+    /* border: 2px red solid; */
+}
+
+.bg-card-tech {
+    z-index: 1;
+    position: absolute;
+    width: 1140px;
+    height: 300px;
+}
+
+.img-card-tech {
+    margin-left: 16px;
+    z-index: 2;
+    width: 270px;
+    height: 270px;
+}
+
+.technologycard2 .title-tech {
+    text-align: right;
+    font-size: 24px;
+    font-weight: 300;
+    width: 700px;
+}
+
+.technologycard2 .heading-tech {
+    text-align: right;
+}
+
+.technologycard2 .img-card-tech {
+    position: relative;
+    left: 50px;
+    z-index: 2;
+    width: 270px;
+    height: 270px;
+}
+
+.technologycard2 .techbox-text {
+    position: relative;
+    left: 50px;
+}
+
+.techbox-text {
+    display: flex;
+    margin: 16px;
+    flex-direction: column;
+    /* border: 2px orange solid; */
+    z-index: 2;
+}
+
+.heading-tech {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.title-tech {
+    font-size: 24px;
+    font-weight: 300;
+    width: 750px;
 }
 
 .working-box {
@@ -605,6 +675,24 @@ main {
     height: 20px;
 }
 
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        position: relative;
+        top: -20px;
+        visibility: hidden;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        visibility: visible;
+    }
+}
+
 .delivery-pickup-info {
     padding: 8px;
     display: flex;
@@ -614,20 +702,33 @@ main {
 }
 
 .delivery-info {
+    /* border: 2px red solid; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pickup-info {
+    /* border: 2px red solid; */
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .delivery-info-top {
+    /* border: 2px green solid; */
+    width: 1050px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: "Roboto Flex", sans-serif;
 }
 
 .pickup-info-top {
+    /* border: 2px green solid; */
+    width: 1050px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: "Roboto Flex", sans-serif;
 }
@@ -639,20 +740,46 @@ main {
 
 .delivery-info-top span {
     border: 1px #B8D1F1 solid;
-    width: 880px;
+    width: 860px;
 }
 
 .pickup-info-top span {
     border: 1px #B8D1F1 solid;
-    width: 860px;
+    width: 830px;
 }
 
-.plus {
+.plus1 {
+    width: 40px;
+    color: #B8D1F1;
+    border: none;
+    background-color: transparent;
     font-size: 32px;
     font-weight: 500;
 }
 
-.info-title {
+.plus2 {
+    width: 40px;
+    color: #B8D1F1;
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.info-title1 {
+    display: none;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-radius: 15px;
+    margin: 8px;
+    padding: 16px;
+    font-weight: 300;
+    width: 1060px;
+    font-size: 24px;
+    background-color: rgba(146, 163, 255, 0.2);
+}
+
+.info-title2 {
+    display: none;
     border: 1px rgba(255, 255, 255, 0.4) solid;
     border-radius: 15px;
     margin: 8px;
@@ -744,7 +871,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px orange solid; */
-    width: 100vw;
+    width: 88vw;
 }
 
 footer .buttons {
@@ -956,3 +1083,4 @@ footer button:hover {
     width: 100vw;
     /* border: 2px orange solid; */
 }
+
