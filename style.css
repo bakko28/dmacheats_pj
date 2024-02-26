@@ -6,88 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Flex", sans-serif;
-}
-
-@media (max-width: 450px) {
-    body {
-        position: relative;
-        left: 160px;
-    }
-
-    .catalog-cardsbox {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: 2px yellow solid;
-    }
-
-    .catalogcard1 {
-        position: relative;
-        left: 40px;
-    }
-
-    .catalogcard1 .title {
-        width: 270px;
-        position: relative;
-        left: 40px;
-        text-align: left;
-    }
-
-    .catalogcard1 .price {
-        position: relative;
-        width: 260px;
-        left: 50px;
-        text-align: left;
-    }
-
-    .catalogcard3 {
-        position: relative;
-        right: 40px;
-    }
-
-    .catalogcard3 .title {
-        position: relative;
-        width: 260px;
-        right: 50px;
-        text-align: right;
-    }
-
-    .catalogcard3 .price {
-        position: relative;
-        width: 260px;
-        right: 50px;
-        text-align: right;
-    }
-
-    .technologycard {
-        border: 2px red solid;
-    }
-
-    .techbox-text {
-        position: relative;
-        width: 10px;
-        left: 40px;
-    }
-
-    .working-img {
-        width: 900px;
-    }
-
-    .delivery-pickup-info {
-        width: 900px;
-        border: 2px orange solid;
-    }
-
-    .delivery-info {
-        width: 900px;
-        border: 2px red solid;
-    }
-
-    .pickup-info {
-        width: 900px;
-        border: 2px red solid;
-    }
-}
+} 
 
 body {
     overflow-x: hidden;
@@ -432,7 +351,7 @@ main {
     z-index: -1;
     position: absolute;
     background-color: #3B4267;
-    width: 350px;
+    width: 300px;
     height: 500px;
     opacity: 0.3;
     border-radius: 20px;
@@ -1166,3 +1085,707 @@ footer button:hover {
     /* border: 2px orange solid; */
 }
 
+@media (max-width: 600px) {
+    body {
+        /* border: 2px orange solid; */
+        height: auto;
+        max-width: 600px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        width: 100vw;
+        /* border: 2px red solid; */
+    }
+
+    header .buttons {
+        position: relative;
+        left: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        /* border: 2px  green solid; */
+    }
+
+    header button {
+        font-size: 18px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .mainbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px yellow solid; */
+        padding: 8px;
+        width: 100vw;
+    }
+
+    .mainbox h2 {
+        text-align: center;
+        font-size: 64px;
+    }
+    
+    .mainbox p {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .cardbox {
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        /* border: 2px red solid; */
+    }
+
+    .card-img-box {
+        display: none;
+    }
+
+    .catalog-cardsbox {
+        display: flex;
+        width: 100vw;
+        height: 2540px;
+        /* border: 2px red solid; */
+    }
+
+    .catalog-cardsbox img {
+        width: 200px;
+        height: auto;
+    }
+
+    .catalog-cards-top-box {
+        display: flex;
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    .catalog-cards-bottom-box {
+        position: relative;
+        top: 1200px;
+        display: flex;
+        padding: 8px;
+    }
+
+    .catalogcard1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+    }
+
+    .catalogcard2 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 15px;
+    }
+
+    .catalogcard3 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -30px;
+    }
+
+    .catalogcard4 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .catalogcard-text {
+        width: 250px;
+        height: auto;
+    }
+
+    .title {
+        width: 240px;
+        font-size: 18px;
+    }
+
+    .catalogcard1 button {
+        position: relative;
+        display: flex;
+        top: 55px;
+        border-radius: 10px;
+        color: #B8D1F1;
+        background: rgb(146,163,255);
+        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
+        font-size: 32px;          
+        padding: 16px;                                
+        width: 240px;
+        height: 60px;
+        border: 1px rgba(255, 255, 255, 0.2) solid;
+    }
+
+    .catalogcard2 button {
+        position: relative;
+        display: flex;
+        /* top: 10px; */
+        border-radius: 10px;
+        color: #B8D1F1;
+        background: rgb(146,163,255);
+        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
+        font-size: 32px;          
+        padding: 16px;                                
+        width: 240px;
+        height: 60px;
+        border: 1px rgba(255, 255, 255, 0.2) solid;
+    }
+
+    .catalogcard3 button {
+        position: relative;
+        display: flex;
+        top: 50px;
+        border-radius: 10px;
+        color: #B8D1F1;
+        background: rgb(146,163,255);
+        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
+        font-size: 32px;          
+        padding: 16px;                                
+        width: 240px;
+        height: 60px;
+        border: 1px rgba(255, 255, 255, 0.2) solid;
+    }
+
+    .right-block-catalog {
+        display: none;
+    }
+
+    .left-block-catalog {
+        display: none;
+    }
+
+    .catalog-vector-left {
+        display: none;
+    }
+
+    .catalog-vector-right {
+        display: none;
+    }
+
+    .technology-box {
+        position: relative;
+        margin: 0;
+        /* border: 2px white solid; */
+    }
+
+    .technology-box-name {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 80px;
+    }
+
+    .technology-box-name p {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 48px;
+    }
+
+    .technology-box-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px green solid; */
+        width: 100vw;
+    }
+
+    .technologycard, .technologycard2, .technologycard3 {
+        display: flex;
+        padding: 8px;
+        background-color: #242843;
+        border-radius: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px yellow solid; */
+        width: 300px;
+        padding: 16px;
+        height: auto;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .bg-card-tech {
+        position: relative;
+        display: none;
+    }
+
+    .img-card-tech {
+        width: 200px;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .techbox-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: auto;
+        /* border: 2px red solid; */
+    }
+
+    .heading-tech {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 48px;
+    }
+
+    .title-tech {
+        width: 210px;
+        font-size: 18px;
+    }
+
+    .technologycard2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .technologycard2 .img-card-tech {
+        position: relative;
+        left: 0px;
+        width: 200px;
+        height: auto;
+    }
+
+    .technologycard2 .techbox-text{
+        position: relative;
+        left: 0;
+    }
+
+    .technologycard2 .title-tech {
+        text-align: center;
+        width: 210px;
+        font-size: 18px;
+    }
+
+    .working-box {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .working-box img {
+        padding: 0;
+        margin: 0;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 250px;
+        height: auto;
+    }
+
+    .working-box-name p{
+        font-size: 48px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .delivery-box {
+        margin: 0;
+    }
+
+    .delivery-box-name p{
+        font-size: 48px;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    
+    .delivery-pickup-info {
+        width: 300px;
+        margin-top: 16px;
+        height: auto;
+        padding: 0;
+        /* border: 2px red solid; */
+    }
+
+    .delivery-info {
+        width: 300px;
+    }
+
+    .delivery-info-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: auto;
+    }
+
+    .delivery-info-top p {
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0;
+        margin-right: 8px;
+    }
+
+    .delivery-info-top span{
+        margin: 0;
+        width: 100px;
+    }
+
+    .plus1 {
+        width: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .info-title1 {
+        margin: 0px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        font-size: 18px;
+    }
+
+    .pickup-info {
+        width: 300px;
+    }
+
+    .pickup-info-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: auto;
+    }
+
+    .pickup-info-top p {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 8px;
+    }
+
+    .pickup-info-top span{
+        margin: 0;
+        width: 80px;
+    }
+
+    .plus2 {
+        width: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .info-title2 {
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        font-size: 18px;
+    }
+
+    .application-box {
+        margin: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 300px;
+        height: auto;
+        /* border: 2px red solid; */
+    }
+
+    .fill-application {
+        font-size: 48px;
+    }
+
+    .application-input-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        /* border: 2px green solid; */
+        position: relative;
+        right: 0;
+    }
+
+    .textbox-application {
+        display: flex;
+        position: relative;
+        bottom: 35px;
+        right: 3px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        /* border: 2px orange solid; */
+        font-size: 18px;
+    }
+    
+    .textbox-application p {
+        margin: 0px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .inputbox-application {
+        /* border: 2px yellow solid; */
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inputbox-application input {
+        margin: 0;
+        background-color: #242843;
+        border-radius: 8px;
+        padding: 16px;
+        color: #7FABD3;
+        font-size: 18px;
+        font-family: "Roboto Flex", sans-serif;
+        border: 1px rgba(255, 255, 255, 0.4) solid;
+        height: 40px;
+        width: 200px;
+    }
+
+    #telegramForm {
+        /* border: 2px white solid; */
+        width: 200px;
+    }
+
+    #telegramForm button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        width: 100vw;
+        /* border: 2px red solid; */
+    }
+
+    footer .buttons {
+        position: relative;
+        left: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        /* border: 2px  green solid; */
+    }
+
+    footer button {
+        font-size: 18px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .catalog-page-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .catalog-page-cards .topcards {
+        position: relative;
+        left: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-page-cards .topcards2 {
+        position: relative;
+        left: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-page-cards .topcards3 {
+        position: relative;
+        left: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-page-cards .topcards .card-bg {
+        position: absolute;
+        right: 10px;
+        width: 300px;
+    }
+
+    .catalog-page-cards .topcards2 .card-bg {
+        position: absolute;
+        right: 10px;
+        width: 300px;
+    }
+
+    .catalog-page-cards .topcards3 .card-bg {
+        position: absolute;
+        right: 10px;
+        width: 300px;
+    }
+
+    .catalog-page-cards .bottomcards .card-bg {
+        position: absolute;
+        right: 10px;
+        width: 300px;
+    }
+
+    .catalog-page-cards .bottomcards {
+        position: relative;
+        left: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topcards {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottomcards {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftcard {
+        width: 300px;
+        height: auto;
+        margin: 0;
+    }
+
+    .rightcard {
+        height: auto;
+        width: 300px;
+        margin: 0;
+    }
+
+    .card-bg {
+        width: 300px;
+        height: 140px;
+    }
+
+    .card-img {
+        width: 100px;
+    }
+
+    .info-heading-page2 {
+        font-size: 16px;
+    }
+
+    .info-title-page2 {
+        font-size: 15px;
+    }
+
+    .priceinfo {
+        margin: 8px;
+    }
+
+    .priceinfo p {
+        font-size: 12px;
+    }
+    
+    .priceinfo button {
+        display: flex;
+        border-radius: 10px;
+        color: #B8D1F1;
+        background: rgb(146,163,255);
+        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
+        font-size: 12px;          
+        padding: 8px;                                
+        width: 80px;
+        height: 30px;
+        border: 1px rgba(255, 255, 255, 0.2) solid;
+    }
+
+    .dmacard-buy-box {
+        margin-top: 16px;
+        width: 300px;
+    }
+
+    .catalog-box2-name {
+        font-size: 48px;
+        margin: 0;
+    }
+
+    .catalog-page-cards {
+        width: 300px;
+        margin-top: 8px;
+    }
+
+    .dmacard-buy-box .catalog-page-cards .card-img {
+        margin: 0;
+        width: 100px;
+    }
+
+    .particle-img {
+        display: none;
+    }
+
+    .kmbox-buy-box .catalog-page-cards {
+        position: relative;
+        left: 10px;
+    }
+
+    .firmware-buy-box .catalog-page-cards {
+        position: relative;
+        left: 10px;
+    }
+
+    .firmware-buy-box .bottomcards .leftcard{
+        margin-bottom: 28px;
+    }
+
+    .firmware-buy-box .topcards .leftcard{
+        margin-bottom: 28px;
+    }
+
+    .firmware-buy-box .topcards .rightcard{
+        margin-bottom: 14px;
+    }
+
+    .info-heading-page2-tarkov {
+        font-size: 12px;
+    }
+
+  } 
