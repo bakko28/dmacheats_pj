@@ -8,6 +8,87 @@
     font-family: "Roboto Flex", sans-serif;
 }
 
+@media (max-width: 450px) {
+    body {
+        position: relative;
+        left: 160px;
+    }
+
+    .catalog-cardsbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px yellow solid;
+    }
+
+    .catalogcard1 {
+        position: relative;
+        left: 40px;
+    }
+
+    .catalogcard1 .title {
+        width: 270px;
+        position: relative;
+        left: 40px;
+        text-align: left;
+    }
+
+    .catalogcard1 .price {
+        position: relative;
+        width: 260px;
+        left: 50px;
+        text-align: left;
+    }
+
+    .catalogcard3 {
+        position: relative;
+        right: 40px;
+    }
+
+    .catalogcard3 .title {
+        position: relative;
+        width: 260px;
+        right: 50px;
+        text-align: right;
+    }
+
+    .catalogcard3 .price {
+        position: relative;
+        width: 260px;
+        right: 50px;
+        text-align: right;
+    }
+
+    .technologycard {
+        border: 2px red solid;
+    }
+
+    .techbox-text {
+        position: relative;
+        width: 10px;
+        left: 40px;
+    }
+
+    .working-img {
+        width: 900px;
+    }
+
+    .delivery-pickup-info {
+        width: 900px;
+        border: 2px orange solid;
+    }
+
+    .delivery-info {
+        width: 900px;
+        border: 2px red solid;
+    }
+
+    .pickup-info {
+        width: 900px;
+        border: 2px red solid;
+    }
+}
+
 body {
     overflow-x: hidden;
     max-width: 100vw;
