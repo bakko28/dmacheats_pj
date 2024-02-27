@@ -1212,7 +1212,7 @@ footer button:hover {
         display: flex;
         flex-direction: column;
         position: relative;
-        bottom: 80px;
+        /* bottom: 80px; */
     }
 
     .catalogcard-text {
@@ -1226,13 +1226,13 @@ footer button:hover {
     }
 
     .price {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     .catalogcard1 button {
         position: relative;
         display: flex;
-        top: 55px;
+        top: 60px;
         border-radius: 10px;
         color: #B8D1F1;
         background: rgb(146,163,255);
@@ -1726,6 +1726,10 @@ footer button:hover {
     .fuser-buy-box .card-bg {
         position: absolute;
         left: 0px;
+    }
+
+    .fuser-buy-box {
+        margin: 0;
     }
 
     .card-bg {
