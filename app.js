@@ -87,3 +87,26 @@ plus2Btn.forEach(btn => {
 
 const leftBtn = document.getElementById('leftButton');
 const rightBtn = document.getElementById('rightButton');
+
+document.getElementById("telegramForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+    let telegram = document.getElementById("telegram").value;
+    let name = document.getElementById("name").value;
+
+    let text = "Телеграм: " + telegram + "\nИмя: " + name;
+
+    var telegramUrl = "https://api.telegram.org/bot7122079884:AAHXd98FRmrHMf7mqHwysxza0Hs_6930yWE/sendMessage?chat_id=741962421&text=" + encodeURIComponent(text);
+
+    fetch(telegramUrl, { method: "GET" })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        alert('Ваше сообщение успешно отправлено!');
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+        alert('Произошла ошибка при отправке сообщения. Попробуйте еще раз.');
+    });
+});
