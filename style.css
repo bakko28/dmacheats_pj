@@ -1098,6 +1098,8 @@ footer button:hover {
     header {
         display: flex;
         flex-direction: row;
+        margin-top: 25px;
+        margin-bottom: 25px;
         /* flex-wrap: wrap; */
         width: 100vw;
         /* border: 2px red solid; */
@@ -1156,6 +1158,10 @@ footer button:hover {
         align-items: center;
         width: 100vw;
         /* border: 2px red solid; */
+    }
+
+    .cardbox .cardbox-bg {
+        display: none;
     }
 
     .card-img-box {
@@ -1613,6 +1619,8 @@ footer button:hover {
     }
 
     footer {
+        margin-top: 25px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
         /* flex-wrap: wrap; */
@@ -1723,12 +1731,12 @@ footer button:hover {
         margin: 0;
     }
 
-    .fuser-buy-box .card-bg {
-        position: absolute;
-        left: 0px;
-    }
-
     .fuser-buy-box {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
@@ -1771,6 +1779,10 @@ footer button:hover {
     }
 
     .dmacard-buy-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 16px;
         width: 300px;
     }
@@ -1794,14 +1806,20 @@ footer button:hover {
         display: none;
     }
 
-    .kmbox-buy-box .catalog-page-cards {
-        position: relative;
-        left: 10px;
+    .kmbox-buy-box {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .firmware-buy-box .catalog-page-cards {
-        position: relative;
-        left: 10px;
+    .firmware-buy-box {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .firmware-buy-box .bottomcards .leftcard{
