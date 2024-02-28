@@ -85,37 +85,24 @@ plus2Btn.forEach(btn => {
     });
 });
 
+const leftBtn = document.getElementById('leftButton');
+const rightBtn = document.getElementById('rightButton');
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const form = document.getElementById('myForm');
+leftBtn.addEventListener('click', function() {
+        // Получаем ссылки на изображения
+        const img1 = document.getElementById('cardImg1');
+        const img2 = document.getElementById('cardImg2');
+        const img3 = document.getElementById('cardImg3');
 
-//     form.addEventListener('submit', function(event) {
-//         event.preventDefault();
+        // Получаем свойства изображений
+        let img1Style = window.getComputedStyle(img1);
+        let img2Style = window.getComputedStyle(img2);
+        let img3Style = window.getComputedStyle(img3);
 
-//         const telegram = document.getElementById('telegram').value;
-//         const name = document.getElementById('name').value;
+        // Меняем свойства изображений
+        img3.style.cssText = img2Style.cssText;
+        img2.style.cssText = img1Style.cssText;
+        img1.style.cssText = img3Style.cssText;
+    });
 
-//         console.log('Telegram:', telegram, '\nName:', name);
 
-//         // Отправляем данные на сервер
-//         fetch('/sendMessage', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify({ telegram, name })
-//         })
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error('Ошибка отправки данных на сервер');
-//             }
-//             return response.text();
-//         })
-//         .then(data => {
-//             console.log(data);
-//         })
-//         .catch(error => {
-//             console.error('Произошла ошибка:', error);
-//         });
-//     });
-// });

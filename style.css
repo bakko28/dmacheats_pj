@@ -218,38 +218,77 @@ main {
     align-items: center;
     /* border: 2px orange solid; */
 }
+
+.card-img-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  
+  .card-img2, .card-img3 {
+    justify-self: center;
+  }
+
+
 .cardbox .cardbox-bg {
     width: 100vw;
     z-index: -1;
     position: absolute;
 }
 
+.card-img-box button {
+    background-color: transparent;
+    border: none;
+}
+
+button i {
+    color: #7FABD3;
+    font-size: 48px;
+}
+
+button:hover i {
+    color: #B8D1F1;
+    font-size: 48px;
+}
+
 .card-img-box {
-    /* border: 2px azure solid; */
-    width: 1055px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1450px;
+    padding: 16px;
+    height: 635px;
+}
+
+.card-img-box-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
     padding: 16px;
     height: 635px;
 }
 
 .card-img1 {
     z-index: 1;
-    position: absolute;
-    top: 70px;
+    position: relative;
+    left: 100px;
     height: 500px;
 }
 
 .card-img2 {
     z-index: 2;
-    position: absolute;
-    left: 300px;
+    /* position: absolute;
+    left: 300px; */
     height: 600px;
 }
 
 .card-img3 {
     z-index: 1;
-    position: absolute;
-    top: 70px;
-    left: 600px;
+    position: relative;
+    right: 100px;
     height: 500px;
 }
 
@@ -1200,6 +1239,7 @@ footer button:hover {
 
     .catalogcard1 {
         display: flex;
+        width: 300px;
         flex-direction: column;
         position: relative;
         top: 0px;
@@ -1214,6 +1254,7 @@ footer button:hover {
     .catalogcard2 {
         display: flex;
         flex-direction: column;
+        width: 300px;
         position: relative;
         top: 15px;
     }
@@ -1227,6 +1268,7 @@ footer button:hover {
     .catalogcard3 {
         display: flex;
         flex-direction: column;
+        width: 300px;
         position: relative;
         top: -30px;
     }
@@ -1241,6 +1283,7 @@ footer button:hover {
         display: flex;
         flex-direction: column;
         position: relative;
+        width: 300px;
         margin: 0px;
         bottom: 60px;
     }
