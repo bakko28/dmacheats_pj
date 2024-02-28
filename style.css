@@ -1165,6 +1165,10 @@ footer button:hover {
         margin: 4px;
     }
 
+    header .buttons button {
+        display: none;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -1286,6 +1290,10 @@ footer button:hover {
         width: 300px;
         margin: 0px;
         bottom: 60px;
+    }
+
+    .catalogcard-bg {
+        width: 300px;
     }
 
     .catalogcard-text {
@@ -1501,7 +1509,7 @@ footer button:hover {
     }
 
     .working-box-name p{
-        font-size: 48px;
+        font-size: 36px;
         margin-left: 0;
         margin-right: 0;
         text-align: center;
@@ -1619,7 +1627,7 @@ footer button:hover {
     }
 
     .fill-application {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     .application-input-box {
@@ -1674,6 +1682,7 @@ footer button:hover {
     }
 
     #telegramForm {
+        margin-left: 8px;
         /* border: 2px white solid; */
         width: 200px;
     }
@@ -1688,10 +1697,9 @@ footer button:hover {
     }
 
     footer {
-        margin-top: 25px;
-        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
+        margin-top: 25px;
         /* flex-wrap: wrap; */
         width: 100vw;
         /* border: 2px red solid; */
@@ -1711,6 +1719,20 @@ footer button:hover {
         font-size: 18px;
         padding: 4px;
         margin: 4px;
+    }
+
+    footer .buttons button {
+        display: none;
+    }
+
+    #catalogBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contactsBtn {
+        display: block;
     }
 
     .catalog-page-cards {
@@ -1764,6 +1786,12 @@ footer button:hover {
 
     .topcards3 .rightcard .card-img {
         height: 110px;
+    }
+
+    .topcards3 .rightcard .infocard {
+        margin-left: 12px;
+        width: 180px;
+        /* border: 2px gold solid; */
     }
 
     .catalog-page-cards .bottomcards .card-bg {
@@ -1873,6 +1901,14 @@ footer button:hover {
     .dmacard-buy-box .catalog-page-cards .card-img {
         margin: 0;
         width: 100px;
+    }
+
+    .dmacard-buy-box .catalog-page-cards .bottomcards .leftcard .card-img {
+        width: 80px;
+    }
+
+    .dmacard-buy-box .catalog-page-cards .bottomcards .leftcard .infocard {
+        margin-left: 20px;
     }
 
     .particle-img {

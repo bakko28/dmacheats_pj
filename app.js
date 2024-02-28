@@ -87,22 +87,3 @@ plus2Btn.forEach(btn => {
 
 const leftBtn = document.getElementById('leftButton');
 const rightBtn = document.getElementById('rightButton');
-
-leftBtn.addEventListener('click', function() {
-        // Получаем ссылки на изображения
-        const img1 = document.getElementById('cardImg1');
-        const img2 = document.getElementById('cardImg2');
-        const img3 = document.getElementById('cardImg3');
-
-        // Получаем свойства изображений
-        let img1Style = window.getComputedStyle(img1);
-        let img2Style = window.getComputedStyle(img2);
-        let img3Style = window.getComputedStyle(img3);
-
-        // Меняем свойства изображений
-        img3.style.cssText = img2Style.cssText;
-        img2.style.cssText = img1Style.cssText;
-        img1.style.cssText = img3Style.cssText;
-    });
-
-
