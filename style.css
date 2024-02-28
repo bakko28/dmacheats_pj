@@ -853,7 +853,7 @@ button:hover i {
     justify-content: center;
     /* border: 2px forestgreen solid; */
     position: relative;
-    right: 85px;
+    right: 110px;
 }
 
 .textbox-application {
@@ -1632,7 +1632,6 @@ footer button:hover {
 
     .application-input-box {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 300px;
@@ -1645,7 +1644,6 @@ footer button:hover {
         display: flex;
         position: relative;
         bottom: 35px;
-        right: 3px;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -1661,7 +1659,8 @@ footer button:hover {
 
     .inputbox-application {
         /* border: 2px yellow solid; */
-        width: 200px;
+        width: 130px;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1678,13 +1677,17 @@ footer button:hover {
         font-family: "Roboto Flex", sans-serif;
         border: 1px rgba(255, 255, 255, 0.4) solid;
         height: 40px;
-        width: 200px;
+        width: 250px;
     }
 
     #telegramForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-left: 8px;
-        /* border: 2px white solid; */
-        width: 200px;
+        border: 2px white solid;
+        width: 250px;
     }
 
     #telegramForm button {
@@ -1692,8 +1695,14 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         font-size: 18px;
-        width: 200px;
+        width: 250px;
         height: 40px;
+    }
+
+    #telegramForm p {
+        
+        text-align: start;
+        font-size: 22px;
     }
 
     footer {
