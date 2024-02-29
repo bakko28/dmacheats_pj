@@ -613,7 +613,7 @@ button:hover i {
     text-align: right;
     font-size: 24px;
     font-weight: 300;
-    width: 700px;
+    width: 720px;
 }
 
 .technologycard2 .heading-tech {
@@ -891,6 +891,7 @@ button:hover i {
 #telegramForm p {
     text-align: start;
     font-size: 48px;
+    margin: 0px 0px 0px 8px;
 }
 
 footer {
