@@ -975,8 +975,6 @@ footer {
 
 .topcards3 .rightcard .infocard {
     position: relative;
-    width: 360px;
-    /* left: 50px; */
 }
 
 .bottomcards {
@@ -1769,8 +1767,7 @@ footer {
     }
 
     .topcards3 .rightcard .infocard {
-        margin-left: 12px;
-        width: 180px;
+        margin: 0px 0px 0px 16px;
         /* border: 2px gold solid; */
     }
 
@@ -1840,7 +1837,6 @@ footer {
 
     .priceinfo {
         width: 150px;
-        margin: 4px;
     }
 
     .priceinfo p {
@@ -1937,4 +1933,11 @@ footer {
         font-size: 12px;
     }
 
+    .firmware-buy-box .catalog-page-cards .infocard {
+        width: 170px;
+    }
+
+    .firmware-buy-box .catalog-page-cards .priceinfo {
+        width: 170px;
+    }
   } 
