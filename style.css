@@ -922,6 +922,7 @@ footer {
 }
 
 .catalog-box2-name {
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1907,6 +1908,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .kmbox-buy-box .topcards .leftcard {
+        width: 170px;
+    }
+
+    .kmbox-buy-box .topcards .rightcard {
+        width: 150px;
     }
 
     .firmware-buy-box {
