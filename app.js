@@ -1,15 +1,8 @@
 const catalogBtn = document.querySelectorAll('#catalogBtn');
-const mainBtn = document.querySelectorAll('#mainPageBtn');
 
 catalogBtn.forEach(btn => {
     btn.onclick = function() {
         window.location.href = 'catalog.html';
-    };
-});
-
-mainBtn.forEach(btn => {
-    btn.onclick = function () {
-        window.location.href = 'index.html';
     };
 });
 
@@ -26,31 +19,6 @@ buyBtns.forEach(btn => {
     });
 });
 
-const technologyBtns = document.querySelectorAll('#technologyBtn');
-
-technologyBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-        let targetSection = document.querySelector('.technology-box');
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            console.error('Целевой раздел не найден');
-        }
-    });
-});
-
-const deliveryBtns = document.querySelectorAll('#deliveryBtn');
-
-deliveryBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-        let targetSection = document.querySelector('.delivery-box');
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            console.error('Целевой раздел не найден');
-        }
-    });
-});
 const infoTitle1Box = document.querySelectorAll('.info-title1');
 const infoTitle2Box = document.querySelectorAll('.info-title2');
 
@@ -96,7 +64,7 @@ document.getElementById("telegramForm").addEventListener("submit", function(even
 
     let text = "Телеграм: " + telegram + "\nИмя: " + name;
 
-    var telegramUrl = "https://api.telegram.org/bot7122079884:AAHXd98FRmrHMf7mqHwysxza0Hs_6930yWE/sendMessage?chat_id=741962421&text=" + encodeURIComponent(text);
+    let telegramUrl = "https://api.telegram.org/bot7009063337:AAG9VjfcPV07j1yBSd-4TM8O5-HSuqRBoH4/sendMessage?chat_id=902559946&text=" + encodeURIComponent(text);
 
     fetch(telegramUrl, { method: "GET" })
     .then(response => {
