@@ -977,6 +977,12 @@ footer {
     height: 220px;
 }
 
+.topcards3 .rightcard .infocard {
+    position: relative;
+    width: 330px;
+    /* left: 50px; */
+}
+
 .bottomcards {
     margin-top: 16px;
     width: 1300px;
@@ -1020,6 +1026,7 @@ footer {
 }
 
 .infocard {
+    margin: 0px 0px 0px 8px;
     /* border: 2px white solid; */
     z-index: 2;
 }
@@ -1048,7 +1055,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 16px;
+    margin: 16px 0px 0px 0px;
+    padding: 8px;
 }
 
 .priceinfo p {
@@ -1065,6 +1073,7 @@ footer {
     padding: 16px;                                
     width: 150px;
     height: 50px;
+    margin: 0px 0px 0px 16px;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
