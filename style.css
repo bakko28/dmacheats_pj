@@ -973,13 +973,9 @@ footer {
     justify-content: center;
 }
 
-.topcards3 .rightcard .card-img {
-    height: 220px;
-}
-
 .topcards3 .rightcard .infocard {
     position: relative;
-    width: 330px;
+    width: 360px;
     /* left: 50px; */
 }
 
@@ -1038,6 +1034,7 @@ footer {
     color: #fff;
 }
 
+
 .info-heading-page2-tarkov {
     margin: 8px;
     font-size: 28px;
@@ -1086,9 +1083,8 @@ footer {
 }
 
 .dmacard-buy-box .catalog-page-cards .card-img {
-    margin-left: 16px;
     margin-right: 48px;
-    width: 200px;
+    width: 180px;
 }
 
 .particle-img {
@@ -1111,6 +1107,10 @@ footer {
     flex-direction: column;
     width: 100vw;
     /* border: 2px orange solid; */
+}
+
+.firmware-buy-box .catalog-page-cards .priceinfo {
+    width: 320px;
 }
 
 @media (max-width: 600px) {
@@ -1764,7 +1764,8 @@ footer {
     }
 
     .topcards3 .rightcard .card-img {
-        height: 110px;
+        height: 132px;
+        width: 80px;
     }
 
     .topcards3 .rightcard .infocard {
@@ -1838,7 +1839,8 @@ footer {
     }
 
     .priceinfo {
-        margin: 8px;
+        width: 150px;
+        margin: 4px;
     }
 
     .priceinfo p {
@@ -1852,7 +1854,8 @@ footer {
         background: rgb(146,163,255);
         background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
         font-size: 12px;          
-        padding: 8px;                                
+        padding: 8px;
+        margin: 0px 0px 0px 8px;                               
         width: 80px;
         height: 30px;
         border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -1876,6 +1879,14 @@ footer {
         width: 300px;
         margin-top: 8px;
     }
+
+    .infocard {
+        margin: 0px 4px 0px 16px;
+        /* border: 2px white solid; */
+        z-index: 2;
+    }
+
+    
 
     .dmacard-buy-box .catalog-page-cards .card-img {
         margin: 0;
