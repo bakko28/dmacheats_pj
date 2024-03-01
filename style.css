@@ -1540,6 +1540,14 @@ footer {
         height: auto;
     }
 
+    .dmacard-buy-box .catalog-page-cards .topcards .leftcard .card-img {
+        width: 100px;
+    }
+    
+    .dmacard-buy-box .catalog-page-cards .topcards2 .leftcard .card-img {
+        width: 100px;
+    }
+
     .delivery-info-top p {
         font-weight: 400;
         font-size: 24px;
@@ -1922,12 +1930,16 @@ footer {
         align-items: center;
     }
 
-    .kmbox-buy-box .topcards .leftcard {
-        width: 170px;
+    .kmbox-buy-box .topcards .leftcard .card-bg {
+        height: 170px;
     }
 
-    .kmbox-buy-box .topcards .rightcard {
-        width: 150px;
+    .kmbox-buy-box .topcards .rightcard .card-bg {
+        height: 150px;
+    }
+
+    .kmbox-buy-box .rightcard .info-title-page2 {
+        margin-bottom: 14px;
     }
 
     .firmware-buy-box {
