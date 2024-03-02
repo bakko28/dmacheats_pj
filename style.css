@@ -340,72 +340,33 @@ button:hover i {
     /* border: 2px green solid; */
 }
 
-.catalogcard1 {
-    position: relative;
-    top: 50px;
-    margin: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.catalogcard1, .catalogcard2, .catalogcard3, .catalogcard4 {
+    margin: 0px 8px 0px 8px;
     /* border: 2px yellow solid; */
-    width: 350px;
-    height: 650px;
-    padding: 16px;
+    width: 368px;
+    height: 610px;
+    padding: 8px;
 }
 
 .catalogcard2 {
-    margin: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px yellow solid; */
-    width: 350px;
-    height: 650px;
-    padding: 16px;
+    margin-bottom: 80px;
 }
-
-.catalogcard3 {
-    position: relative;
-    top: 40px;
-    margin: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px yellow solid; */
-    width: 350px;
-    height: 670px;
-    padding: 16px;
-}
-
-.catalogcard4 {
-    position: relative;
-    bottom: 50px;
-    margin: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px yellow solid; */
-    width: 350px;
-    height: 650px;
-    padding: 16px;
-}
-
-
 
 .catalogcard-bg {
-    z-index: -1;
-    position: absolute;
-    background-color: #3B4267;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(59, 66, 103, 0.3);
     width: 350px;
     height: 500px;
-    opacity: 0.3;
     border-radius: 20px;
-    border: 2px rgba(255, 255, 255, 0.4) solid;
+    border: 2px rgba(255, 255, 255, 0.1) solid;
    
+}
+
+.catalogcard-bg img {
+    height: 200px;
 }
 
 .catalogcard-text {
@@ -440,73 +401,13 @@ button:hover i {
     font-size: 48px;
 }
 
-.catalogcard1 img {
-    height: 300px;
-}
-
-.catalogcard2 img {
-    height: 300px;
-}
-
-.catalogcard3 img {
-    height: 300px;
-}
-.catalogcard4 img {
-    position: relative;
-    top: 50px;
-    height: 200px;
-}
-
-.catalogcard1 button {
-    position: relative;
-    top: 10px;
+.catalog-cardsbox button {
+    margin: 10px 0px 10px 0px;
     border-radius: 10px;
     color: #B8D1F1;
     background: rgb(146,163,255);
     background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-    font-size: 32px;          
-    padding: 16px;                                
-    width: 350px;
-    height: 80px;
-    border: 1px rgba(255, 255, 255, 0.2) solid;
-}
-
-.catalogcard2 button {
-    position: relative;
-    border-radius: 10px;
-    color: #B8D1F1;
-    background: rgb(146,163,255);
-    background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-    font-size: 32px;          
-    padding: 16px;                                
-    width: 350px;
-    height: 80px;
-    border: 1px rgba(255, 255, 255, 0.2) solid;
-}
-
-.catalogcard3 button {
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
-    color: #B8D1F1;
-    background: rgb(146,163,255);
-    background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-    font-size: 32px;          
-    padding: 16px;                                
-    width: 350px;
-    height: 80px;
-    border: 1px rgba(255, 255, 255, 0.2) solid;
-}
-
-.catalogcard4 button {
-    position: relative;
-    top: 55px;
-    border-radius: 10px;
-    color: #B8D1F1;
-    background: rgb(146,163,255);
-    background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-    font-size: 32px;          
-    padding: 16px;                                
+    font-size: 32px;                                
     width: 350px;
     height: 80px;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -515,35 +416,36 @@ button:hover i {
 .catalog-cards-top-box {
     z-index: 2;
     display: flex;
-    height: 730px;
+    height: auto;
+    align-items: center;
+    padding: 8px;
     /* border: 2px red solid; */
 }
 
 .catalog-cards-bottom-box {
     z-index: 1;
+    position: relative;
+    bottom: 80px;
     display: flex;
     justify-content: space-around;
-    position: relative;
-    bottom: 60px;
-    height: 600px;
     width: 100vw;
     /* border: 2px pink solid; */
 }
 
 .left-block-catalog {
     position: relative;
+    top: 50px;
     opacity: 0.7;
     width: 100vw;
     height: 500px;
-    top: 110px;
 }
 
 .right-block-catalog {
     position: relative;
     opacity: 0.7;
+    top: 50px;
     width: 100vw;
     height: 500px;
-    top: 110px;
     transform: scaleX(-1);
 }
 
@@ -1212,88 +1114,49 @@ footer {
     }
 
     .catalog-cardsbox {
+        width: 100%;
         display: flex;
-        width: 100vw;
-        height: 2540px;
-        /* border: 2px red solid; */
-    }
-
-    .catalog-cardsbox img {
-        width: 200px;
-        height: auto;
+        flex-direction: column;
     }
 
     .catalog-cards-top-box {
         display: flex;
-        padding: 8px;
+        padding: 0px 8px 0px 8px;
         flex-direction: column;
+    }
+
+    .catalogcard1, .catalogcard2, .catalogcard3, .catalogcard4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        width: 300px;
+        padding: 0px;
+        height: auto;
+        margin: 4px 8px 4px 8px;
     }
 
     .catalog-cards-bottom-box {
         position: relative;
-        top: 1200px;
-        display: flex;
-        padding: 8px;
-    }
-
-    .catalogcard1 {
-        display: flex;
-        width: 300px;
-        flex-direction: column;
-        position: relative;
-        top: 0px;
-    }
-
-    .catalogcard1 img {
-        position: relative;
-        top: 50px;
-        width: 250px;
-    }
-
-    .catalogcard2 {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        position: relative;
-        top: 15px;
-    }
-
-    .catalogcard2 img {
-        position: relative;
-        top: 50px;
-        width: 150px;
-    }
-
-    .catalogcard3 {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        position: relative;
-        top: -30px;
-    }
-
-    .catalogcard3 img {
-        position: relative;
-        top: 50px;
-        width: 200px;
-    }
-
-    .catalogcard4 {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 300px;
-        margin: 0px;
-        bottom: 60px;
+        bottom: 0px;
     }
 
     .catalogcard-bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 8px;
         width: 300px;
     }
 
+    .catalog-cardsbox img {
+        height: 200px;
+    }
+
     .catalogcard-text {
-        position: relative;
-        top: 40px;
+        margin: 16px;
         width: 250px;
         height: auto;
     }
@@ -1307,68 +1170,8 @@ footer {
         font-size: 32px;
     }
 
-    .catalogcard1 button {
-        position: relative;
-        display: flex;
-        top: 40px;
-        border-radius: 10px;
-        color: #B8D1F1;
-        background: rgb(146,163,255);
-        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-        font-size: 32px;          
-        padding: 16px;                                
+    .catalog-cardsbox button {
         width: 300px;
-        height: 60px;
-        border: 1px rgba(255, 255, 255, 0.2) solid;
-    }
-
-    .catalogcard2 button {
-        position: relative;
-        display: flex;
-        top: 30px;
-        border-radius: 10px;
-        color: #B8D1F1;
-        background: rgb(146,163,255);
-        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-        font-size: 32px;          
-        padding: 16px;                                
-        width: 300px;
-        height: 60px;
-        border: 1px rgba(255, 255, 255, 0.2) solid;
-    }
-
-    .catalogcard3 button {
-        position: relative;
-        display: flex;
-        top: 50px;
-        border-radius: 10px;
-        color: #B8D1F1;
-        background: rgb(146,163,255);
-        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-        font-size: 32px;          
-        padding: 16px;                                
-        width: 300px;
-        height: 60px;
-        border: 1px rgba(255, 255, 255, 0.2) solid;
-    }
-
-    .catalogcard4 img {
-        margin: 8px;
-    }
-
-    .catalogcard4 button {
-        position: relative;
-        display: flex;
-        top: 50px;
-        border-radius: 10px;
-        color: #B8D1F1;
-        background: rgb(146,163,255);
-        background: linear-gradient(180deg, rgba(146,163,255,0.3) 0%, rgba(88,99,158,0.3) 50%);
-        font-size: 32px;          
-        padding: 16px;                                
-        width: 300px;
-        height: 60px;
-        border: 1px rgba(255, 255, 255, 0.2) solid;
     }
 
     .right-block-catalog {
