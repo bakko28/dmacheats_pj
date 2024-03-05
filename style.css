@@ -8,10 +8,6 @@
     font-family: "Roboto Flex", sans-serif;
 } 
 
-html {
-    scroll-behavior: smooth;
-}
-
 a {
     height: auto;
     font-weight: 500;
@@ -1027,8 +1023,16 @@ footer {
 }
 
 @media (max-width: 600px) {
+    
+    html {
+        overflow-x: hidden;
+        height: auto;
+        max-width: 600px;
+    }
+
     body {
         /* border: 2px orange solid; */
+        overflow-x: hidden;
         height: auto;
         max-width: 600px;
         margin-top: 0px;
@@ -1044,6 +1048,27 @@ footer {
         /* flex-wrap: wrap; */
         width: 100vw;
         /* border: 2px red solid; */
+    }
+
+    .circle-bg-left {
+        display: none;
+    }
+
+    .circle-bg-right {
+        display: none;
+    }
+
+    .bg-center1 {
+        width: 350px;
+    }
+
+    .bg-center2 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .bg-img-center img {
+        height: 500px;
     }
 
     .buttons {
