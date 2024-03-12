@@ -872,9 +872,6 @@ footer {
     justify-content: center;
 }
 
-.topcards3 .rightcard .infocard {
-    position: relative;
-}
 
 .bottomcards {
     margin-top: 16px;
@@ -896,7 +893,7 @@ footer {
 }
 
 .rightcard {
-    margin-left: 8px;
+    margin-left: 16px;
     /* border: 2px pink solid; */
     width: 640px;
     height: 290px;
@@ -980,19 +977,26 @@ footer {
 }
 
 .dmacard-buy-box .catalog-page-cards .card-img {
-    margin-right: 48px;
+    margin-right: 32px;
     width: 180px;
 }
 
 .dmacard-buy-box .catalog-page-cards .topcards .leftcard .card-img {
     width: 210px;
+    margin: 0px;
 }
 
 .dmacard-buy-box .catalog-page-cards .topcards2 .leftcard .card-img {
     width: 220px;
+    margin: 0px;
+}
+
+.topcards3 .rightcard .card-img {
+    height: 250px;
 }
 
 .particle-img {
+    z-index: -2;
     width: 100vw;
     position: absolute;
 }
@@ -1586,8 +1590,6 @@ footer {
     }
 
     .card-bg {
-        position: absolute;
-        right: 10px;
         width: 300px; 
         height: 150px;
     }
@@ -1679,14 +1681,13 @@ footer {
 
     .dmacard-buy-box .catalog-page-cards .bottomcards .leftcard .card-img {
         width: 80px;
-    }
-
-    .dmacard-buy-box .catalog-page-cards .bottomcards .leftcard .infocard {
-        margin-left: 20px;
+        margin-right: 12px;
     }
 
     .dmacard-buy-box .topcards3 .rightcard .card-img {
         width: 80px;
+        height: auto;
+        margin-right: 16px;
     }
 
     .particle-img {
