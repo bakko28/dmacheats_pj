@@ -907,7 +907,7 @@ footer {
 }
 
 .card-bg {
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     width: 640px;
     height: 290px;
@@ -1566,110 +1566,56 @@ footer {
         justify-content: center;
         align-items: center;
         width: 300px;
+        /* border: 2px yellow solid; */
     }
 
-    .catalog-page-cards .topcards {
-        position: relative;
-        left: 10px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .catalog-page-cards .topcards2 {
-        position: relative;
-        left: 10px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .catalog-page-cards .topcards3 {
-        position: relative;
-        left: 10px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .catalog-page-cards .topcards .card-bg {
-        position: absolute;
-        right: 10px;
-        width: 300px;
-    }
-
-    .catalog-page-cards .topcards2 .card-bg {
-        position: absolute;
-        right: 10px;
-        width: 300px;
-    }
-
-    .catalog-page-cards .topcards3 .card-bg {
-        position: absolute;
-        right: 10px;
-        width: 300px;
-    }
-
-    .topcards3 .rightcard .card-img {
-        height: 132px;
-        width: 80px;
-    }
-
-    .topcards3 .rightcard .infocard {
-        margin: 0px 0px 0px 16px;
-        /* border: 2px gold solid; */
-    }
-
-    .catalog-page-cards .bottomcards .card-bg {
-        position: absolute;
-        right: 10px;
-        width: 300px;
-    }
-
-    .catalog-page-cards .bottomcards {
-        position: relative;
-        left: 10px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topcards {
+    .topcards,.topcards2, .topcards3 {
+        margin: 0px;
+        /* border: 2px green solid; */
         width: 300px;
         display: flex;
         flex-direction: column;
     }
 
     .bottomcards {
+        margin: 0px;
+        /* border: 2px red solid; */
         width: 300px;
         display: flex;
         flex-direction: column;
     }
 
+    .card-bg {
+        position: absolute;
+        right: 10px;
+        width: 300px; 
+        height: 150px;
+    }
+
     .leftcard {
+        margin: 5px 0px 5px 0px;
+        padding: 0px;
+        /* border: 2px hotpink solid; */
         width: 300px;
-        height: auto;
-        margin: 0;
+        height: 150px;
     }
 
     .rightcard {
-        height: auto;
+        margin: 5px 0px 5px 0px;
+        padding: 0px;
+        /* border: 2px hotpink solid; */
+        height: 150px;
         width: 300px;
-        margin: 0;
     }
 
     .fuser-buy-box {
+        /* border: 2px orange solid; */
         width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0;
-    }
-
-    .card-bg {
-        width: 300px;
-        height: 140px;
+        margin: 0px;
     }
 
     .card-img {
@@ -1682,6 +1628,12 @@ footer {
 
     .info-title-page2 {
         font-size: 15px;
+    }
+
+    .infocard {
+        margin: 0px 4px 0px 16px;
+        /* border: 2px white solid; */
+        z-index: 2;
     }
 
     .priceinfo {
@@ -1720,19 +1672,6 @@ footer {
         margin: 0;
     }
 
-    .catalog-page-cards {
-        width: 300px;
-        margin-top: 8px;
-    }
-
-    .infocard {
-        margin: 0px 4px 0px 16px;
-        /* border: 2px white solid; */
-        z-index: 2;
-    }
-
-    
-
     .dmacard-buy-box .catalog-page-cards .card-img {
         margin: 0;
         width: 100px;
@@ -1744,6 +1683,10 @@ footer {
 
     .dmacard-buy-box .catalog-page-cards .bottomcards .leftcard .infocard {
         margin-left: 20px;
+    }
+
+    .dmacard-buy-box .topcards3 .rightcard .card-img {
+        width: 80px;
     }
 
     .particle-img {
@@ -1758,14 +1701,6 @@ footer {
         align-items: center;
     }
 
-    .kmbox-buy-box .topcards .leftcard .card-bg {
-        height: 170px;
-    }
-
-    .kmbox-buy-box .topcards .rightcard .card-bg {
-        height: 150px;
-    }
-
     .kmbox-buy-box .rightcard .info-title-page2 {
         margin-bottom: 14px;
     }
@@ -1778,20 +1713,8 @@ footer {
         align-items: center;
     }
 
-    .firmware-buy-box .bottomcards .leftcard{
-        margin-bottom: 28px;
-    }
-
-    .firmware-buy-box .topcards .leftcard{
-        margin-bottom: 28px;
-    }
-
-    .firmware-buy-box .topcards .rightcard{
-        margin-bottom: 14px;
-    }
-
     .info-heading-page2-tarkov {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .firmware-buy-box .catalog-page-cards .infocard {
